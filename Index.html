@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goodness | My Portfolio</title>
+   
+
+    <style>
+        body {
+            background-color: #f5efff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 3px;
+            color: #333;
+        }
+
+        h1 {
+            color: #7b2cbf;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+        .intro {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #9d4edd;
+}
+
+button {
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.about {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.about h2 {
+    color: #7b2cbf;
+}
+
+.about p {
+    line-height: 1.7;
+}
+.skills {
+    padding: 25px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-list span {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+.projects {
+    padding: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.project-card h3 {
+    color: #7b2cbf;
+}
+
+.project-card span {
+    color: #9d4edd;
+    font-size: 14px;
+}
+.contact {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #7b2cbf;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+nav {
+    padding: 20px 5px;
+    background-color: white;
+}
+
+nav a {
+    color: #7b2cbf;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+footer {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px 5px;
+        font-size: 14px;
+    }
+
+    .about, .contact {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .project-card {
+        margin: 10px 0;
+    }
+
+    .intro {
+        padding: 30px 15px;
+    }
+}
+button, .contact a {
+    transition: 0.3s;
+}
+
+button:hover, .contact a:hover {
+    background-color: #5a189a;
+    transform: scale(1.05);
+}
+
+nav a:hover {
+    color: #c77dff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f5ff;
+    line-height: 1.6;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px #ddd;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro {
+    background: linear-gradient(135deg, #eee0ff, #ffffff);
+    padding: 70px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+}
+
+section {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.welcome {
+    background-color: #ead7ff;
+    color: #7b2cbf;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #9d4edd;
+    margin: 8px auto;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <div class="intro">
+        <span class="welcome">WELCOME TO MY PORTFOLIO</span>
+    <h1>Hi, I'm Goodness 👋</h1>
+
+    <h2>Aspiring Web Developer</h2>
+
+    <p>
+        I'm a student learning web development.
+        I enjoy creating websites and exploring
+        how technology works.
+    </p>
+
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+    View My Projects
+</button>
+</div>
+<section class="about">
+    <h2>About Me</h2>
+
+    <p>
+        My name is Goodness. I'm an Accounting
+        student with an interest in technology
+        and web development.
+
+        I'm currently learning HTML, CSS and
+        JavaScript, and I'm excited to keep
+        improving my skills.
+    </p>
+</section>
+<section class="skills"id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript (Beginner)</span>
+        <span>Accounting</span>
+    </div>
+</section>
+<section class="projects"id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>HTML Form</h3>
+        <p>
+            A simple form built with HTML
+            and JavaScript validation.
+        </p>
+        <span>HTML · JavaScript</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Birthday Website</h3>
+        <p>
+            A birthday surprise website
+            created as a coding practice project.
+        </p>
+        <span>HTML · CSS · JavaScript</span>
+    </div>
+</section>
+<section class="contact"id="contact">
+    <h2>Contact Me</h2>
+
+    <p>I'd love to connect and learn from others in tech.</p>
+
+    <a href="mailto: goodnessikpete6@gmail.com">
+        Send Me an Email
+    </a>
+    <a href="https://github.com/codernessie" target="_blank">
+    Visit My GitHub
+</a>
+</section>
+<footer>
+    <p>© 2026 Goodness. All Rights Reserved.</p>
+    <p>Designed and built by Goodness 💜</p>
+</footer>
+</body>
+      </html>
